@@ -5,6 +5,7 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 import Header from "./components/Header";
 import MyAvatar from "./components/MyAvatar";
 import About from "./components/About";
+import Skills from "./components/Skills";
 
 const App: React.FC = () => {
     const isDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
@@ -21,6 +22,7 @@ const App: React.FC = () => {
             <Header/>
             <MyAvatar/>
             <About />
+            <Skills />
         </ThemeProvider>
     )
 }

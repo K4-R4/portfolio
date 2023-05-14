@@ -1,24 +1,23 @@
 import React from "react";
-import Box from '@mui/material/Box'
-import {Typography} from "@mui/material";
+import {Grid, Typography} from "@mui/material";
 
 const About: React.FC = () => {
     return (
         <>
-            <Box sx={{p: 2}}>
-                <Box display='flex' justifyContent='center' sx={{p: 1}}>
+            <Grid container justifyContent='center' alignItems='center' sx={{flexDirection: 'column', p: 2}}>
+                <Grid container md={5} xs={12} display='flex' justifyContent='center' sx={{p: 1}}>
                     <Typography variant='h5'>
                         About
                     </Typography>
-                </Box>
-                <Box display='flex' justifyContent='center' sx={{p: 1}}>
-                    <Typography variant='body1' align='left'>
+                </Grid>
+                <Grid container md={5} xs={12} display='flex' justifyContent='start'>
+                    <Typography variant='body1' sx={{p: 2}}>
                         こんにちは、K4-R4です。<br/>
                         趣味で競プロをしています。<br/>
                         2023年5月から、42Tokyoでソフトウェア開発を勉強しています。<br/>
                     </Typography>
-                </Box>
-            </Box>
+                </Grid>
+            </Grid>
         </>
     )
 }
