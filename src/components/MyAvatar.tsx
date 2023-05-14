@@ -6,7 +6,7 @@ import avatarImage from '../static/images/avater.png'
 const MyAvatar: React.FC = () => {
     return (
         <>
-            <Box sx={{p: 4}}>
+            <Box sx={{p: 2}}>
                 <Box display='flex' justifyContent='center' sx={{p: 1}}>
                     <Avatar
                         alt="Profile image"
