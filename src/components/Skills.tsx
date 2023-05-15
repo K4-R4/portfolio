@@ -5,6 +5,22 @@ interface SkillProps {
     name: string
     content: string
 }
+
+const skillDetails: SkillProps[] = [
+    {
+        name: 'Frontend',
+        content: 'JavaScript / HTML / CSS / Bootstrap / React',
+    },
+    {
+        name: 'Backend',
+        content: 'C / C++ / node.js / Python / Flask / Electron',
+    },
+    {
+        name: 'Infrastracture',
+        content: 'Git / MySQL / SQLite'
+    }
+]
+
 const SkillCard: React.FC<SkillProps> = ({name, content}: SkillProps) => {
     return (
         <>
@@ -21,6 +37,7 @@ const SkillCard: React.FC<SkillProps> = ({name, content}: SkillProps) => {
         </>
     )
 }
+
 const Skills: React.FC = () => {
     return (
         <>
@@ -34,9 +51,9 @@ const Skills: React.FC = () => {
                     <Typography variant='body1' sx={{p: 2}}>
                         規模を問わず、開発で使用したことのある言語、フレームワーク、ツールについてまとめています。<br/>
                     </Typography>
-                    <SkillCard name='Frontend' content='JavaScript / HTML / CSS / Bootstrap / React' />
-                    <SkillCard name='Backend' content='C / C++ / node.js / Python / Flask / Electron' />
-                    <SkillCard name='Infrastracture' content='Git / MySQL / SQLite' />
+                    {skillDetails.map((skillDetail) => {
+                        return <SkillCard {...skillDetail} />
+                    })}
                 </Grid>
             </Grid>
         </>
