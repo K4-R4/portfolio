@@ -5,16 +5,16 @@ interface SkillProps {
     name: string
     content: string
 }
-const SkillCard: React.FC<SkillProps> = (props: SkillProps) => {
+const SkillCard: React.FC<SkillProps> = ({name, content}: SkillProps) => {
     return (
         <>
             <Card sx={{width: '100%', m: 1}}>
                 <CardContent>
                     <Typography variant='h6' align='left'>
-                        {props.name}
+                        {name}
                     </Typography>
                     <Typography color='textSecondary'>
-                        {props.content}
+                        {content}
                     </Typography>
                 </CardContent>
             </Card>
