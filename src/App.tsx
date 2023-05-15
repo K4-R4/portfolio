@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import MyAvatar from "./components/MyAvatar";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Works from "./components/Works";
 
 const App: React.FC = () => {
     const isDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
@@ -23,6 +24,7 @@ const App: React.FC = () => {
             <MyAvatar/>
             <About />
             <Skills />
+            <Works />
         </ThemeProvider>
     )
 }

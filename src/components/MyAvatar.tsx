@@ -1,5 +1,5 @@
 import React from "react";
-import {Avatar, Box, Grid, Typography} from "@mui/material";
+import {Avatar, Grid, Typography} from "@mui/material";
 
 import avatarImage from '../static/images/avater.png'
 
