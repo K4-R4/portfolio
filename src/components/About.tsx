@@ -10,12 +10,15 @@ const About: React.FC = () => {
                         About
                     </Typography>
                 </Grid>
-                <Grid container md={5} xs={12} display='flex' justifyContent='start'>
-                    <Typography variant='body1' sx={{p: 2}}>
-                        こんにちは、K4-R4です。<br/>
-                        趣味で競プロをしています。<br/>
-                        2023年5月から、42Tokyoでソフトウェア開発を勉強しています。<br/>
-                    </Typography>
+                <Grid container md={5} xs={12} display='flex' justifyContent='center'>
+                    <Grid container md={9} xs={12} display='flex' justifyContent='start'>
+                        <Typography variant='body1' sx={{p: 2}}>
+                            K4-R4です。<br/>
+                            2023年5月から、42Tokyoに所属しています。<br/>
+                            42TokyoのカリキュラムでC言語、競技プログラミングでc++、Webアプリケーションの制作で
+                            JavaScriptやPythonを使うことが多いです。
+                        </Typography>
+                    </Grid>
                 </Grid>
             </Grid>
         </>
