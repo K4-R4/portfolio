@@ -1,5 +1,5 @@
 import React from "react";
-import {Grid, Typography} from "@mui/material";
+import {Grid, Link, Typography} from "@mui/material";
 
 const About: React.FC = () => {
     return (
@@ -14,7 +14,8 @@ const About: React.FC = () => {
                     <Grid container md={9} xs={12} display='flex' justifyContent='start'>
                         <Typography variant='body1' sx={{p: 2}}>
                             K4-R4です。<br/>
-                            2023年5月から、42Tokyoに所属しています。<br/>
+                            2023年5月から、<Link href={'https://42tokyo.jp/'} underline={'none'}>42Tokyo</Link>
+                            に所属しています。<br/>
                             42TokyoのカリキュラムでC言語、競技プログラミングでc++、Webアプリケーションの制作で
                             JavaScriptやPythonを使うことが多いです。
                         </Typography>
