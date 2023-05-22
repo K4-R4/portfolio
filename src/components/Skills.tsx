@@ -17,7 +17,7 @@ const skillDetails: SkillProps[] = [
     },
     {
         name: 'Infrastracture',
-        content: 'Git / MySQL / SQLite'
+        content: 'Git / MySQL / SQLite / Linux'
     }
 ]
 
@@ -47,10 +47,13 @@ const Skills: React.FC = () => {
                         Skills
                     </Typography>
                 </Grid>
-                <Grid container md={5} xs={12} display='flex' justifyContent='start' sx={{p: 1}}>
-                    <Typography variant='body1' sx={{p: 2}}>
-                        規模を問わず、開発で使用したことのある言語、フレームワーク、ツールについてまとめています。<br/>
-                    </Typography>
+                <Grid container md={5} xs={12} display='flex' justifyContent='center' sx={{p: 1}}>
+                    <Grid container md={9} xs={12} display='flex' justifyContent='center' sx={{p: 1}}>
+                        <Typography variant='body1' sx={{p: 2}}>
+                            規模を問わず、開発で使用したことのある言語、フレームワーク、ツールについてまとめています。<br/>
+                            分類は厳密なものではありません。<br/>
+                        </Typography>
+                    </Grid>
                     {skillDetails.map((skillDetail) => {
                         return <SkillCard {...skillDetail} />
                     })}
