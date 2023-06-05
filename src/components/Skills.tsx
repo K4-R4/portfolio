@@ -9,7 +9,7 @@ interface SkillProps {
 const skillDetails: SkillProps[] = [
     {
         name: 'Frontend',
-        content: 'JavaScript / HTML / CSS / Bootstrap / React',
+        content: 'JavaScript / TypeScript / React'
     },
     {
         name: 'Backend',
@@ -50,7 +50,7 @@ const Skills: React.FC = () => {
                 <Grid container md={5} xs={12} display='flex' justifyContent='center' sx={{p: 1}}>
                     <Grid container md={9} xs={12} display='flex' justifyContent='center' sx={{p: 1}}>
                         <Typography variant='body1' sx={{p: 2}}>
-                            規模を問わず、開発で使用したことのある言語、フレームワーク、ツールについてまとめています。<br/>
+                            開発で使用したことのある言語、フレームワーク、ツールについてまとめています。<br/>
                             分類は厳密なものではありません。<br/>
                         </Typography>
                     </Grid>

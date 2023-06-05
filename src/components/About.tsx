@@ -17,7 +17,7 @@ const About: React.FC = () => {
                             2023年5月から、<Link href={'https://42tokyo.jp/'} underline={'none'}>42Tokyo</Link>
                             に所属しています。<br/>
                             42TokyoのカリキュラムでC言語、競技プログラミングでc++、Webアプリケーションの制作で
-                            JavaScriptやPythonを使うことが多いです。
+                            JavaScriptやPythonを使います。最近はTypeScriptを使い始めました。
                         </Typography>
                     </Grid>
                 </Grid>
