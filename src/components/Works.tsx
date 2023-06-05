@@ -16,6 +16,20 @@ interface WorkProps {
 
 const workDetails: WorkProps[] = [
     {
+        title: 'トランプゲーム',
+        tech: ['TypeScript', 'Phaser.js', 'Next.js', 'React', 'tailwindCSS'],
+        description: '複数人で開発中のトランプゲームです',
+        repository: 'https://github.com/recursion-team-a/card-games.git',
+        url: ''
+    },
+    {
+        title: '42',
+        tech: ['C'],
+        description: '42Tokyoで取り組んだ課題です。',
+        repository: 'https://github.com/K4-R4/42.git',
+        url: ''
+    },
+    {
         title: 'Clicker Empire Game',
         tech: ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
         description: 'Recursionの課題として制作したゲームです。提示された仕様をもとに取り組みました。',
