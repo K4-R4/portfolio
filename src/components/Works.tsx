@@ -71,7 +71,8 @@ const workDetails: WorkProps[] = [
         title: 'Non-sticky めも',
         tech: ['JavaScript', 'HTML', 'CSS', 'SQLite', 'node.js', 'Electron'],
         description: 'チーム開発で制作したメモ帳デスクトップアプリです。' +
-            'データベースの周辺、メインプロセスとレンダラープロセスの通信などを担当しました。',
+            'データベースの周辺、メインプロセスとレンダラープロセスの通信などを担当しました。' +
+            'smartHR賞を受賞しました',
         repository: 'https://github.com/K4-R4/team-s09',
         url: ''
     },
