@@ -13,11 +13,19 @@ const About: React.FC = () => {
                 <Grid container md={5} xs={12} display='flex' justifyContent='center'>
                     <Grid container md={9} xs={12} display='flex' justifyContent='start'>
                         <Typography variant='body1' sx={{p: 2}}>
-                            K4-R4です。<br/>
-                            2023年5月から、<Link href={'https://42tokyo.jp/'} underline={'none'}>42Tokyo</Link>
-                            に所属しています。<br/>
-                            42TokyoのカリキュラムでC言語、競技プログラミングでc++、Webアプリケーションの制作で
-                            JavaScriptやPythonを使います。最近はTypeScriptを使い始めました。
+                            <Typography paragraph={true} >
+                                こんにちは。Karaです。
+                                2023年5月から、<Link href={'https://42tokyo.jp/'} underline={'none'}>42Tokyo</Link>
+                                に所属しています。
+                            </Typography>
+                            <Typography paragraph={true} >
+                                42TokyoのカリキュラムでC言語、競技プログラミングでc++、Webアプリケーションの制作で
+                                JavaScriptやTypeScriptを使っています。
+                            </Typography>
+                            <Typography paragraph={true} >
+                                オープンコースウェアや<Link href={'https://recursionist.io/'} underline={'none'}>Recursion</Link>
+                                という学習サービスを利用したり、42Tokyoでプロジェクトに取り組んだりしながら学んでいます。
+                            </Typography>
                         </Typography>
                     </Grid>
                 </Grid>

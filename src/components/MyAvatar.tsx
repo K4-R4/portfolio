@@ -16,7 +16,7 @@ const MyAvatar: React.FC = () => {
                 </Grid>
                 <Grid xs={6} display='flex' justifyContent='center' sx={{p: 1}}>
                     <Typography variant='h5'>
-                        K4-R4
+                        Kara
                     </Typography>
                 </Grid>
             </Grid>

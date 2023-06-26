@@ -16,46 +16,70 @@ interface WorkProps {
 
 const workDetails: WorkProps[] = [
     {
-        title: 'トランプゲーム',
+        title: 'so_long',
+        tech: ['C'],
+        description: '42Tokyoの課題としてCで制作した2Dの脱出ゲームです。指定のフォーマットのマップファイルからゲームを生成できます。' +
+            'アイテムを収集してゴールに到達することが目的です。' +
+            'スタートからゴールまでに有効な経路があるかなどのマップの検証や、ファイルから効率よくマップを読み取ることが難しかったです。',
+        repository: 'https://github.com/orgs/recursion-team-a/repositories',
+        url: ''
+    },
+    {
+        title: '"Tuning the backend" Contest 2023',
+        tech: ['TypeScript', 'MySQL', 'next.js'],
+        description: '42Tokyoでバックエンドのチューニングコンテストに参加しました。' +
+            '主にデータベースに関わる部分の高速化を担当しました。' +
+            'インデックスの付与やn + 1問題の解消、クエリの効率化に挑戦しました。',
+        repository: 'https://github.com/K4-R4/42HoursTuning2023-1',
+        url: ''
+    },
+    {
+        title: 'トランプゲーム(仮)',
         tech: ['TypeScript', 'Phaser.js', 'Next.js', 'React', 'tailwindCSS'],
-        description: '複数人で開発中のトランプゲームです',
-        repository: 'https://github.com/recursion-team-a/card-games.git',
+        description: '複数人で開発中のトランプゲームです。設計や技術選定に関しては開発ログやIssueにあります',
+        repository: 'https://github.com/orgs/recursion-team-a/repositories',
         url: ''
     },
     {
         title: '42',
         tech: ['C'],
-        description: '42Tokyoで取り組んだ課題です。',
+        description: '42Tokyoで取り組んだ課題の一覧です。',
         repository: 'https://github.com/K4-R4/42.git',
         url: ''
     },
     {
+        title: 'AtCoder Bookmarks',
+        tech: ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
+        description: 'AtCoderで間違えた問題をメモとともに保存しておくChrome拡張機能です。' +
+            'AtCoderでコンテストに取り組む中で、溶けなかった問題をまとめておいて効率的に見直したいという考えから制作しました。' +
+            'Chrome storageを使用しているため、端末間で保存した内容が共有されるようになっています。',
+        repository: 'https://github.com/K4-R4/atcoder-bookmarks',
+        url: 'https://chrome.google.com/webstore/detail/atcoder-bookmarks/kiaidplgaggiackabggkpopkmdiljkij?hl=ja'
+    },
+    {
         title: 'Clicker Empire Game',
         tech: ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
-        description: 'Recursionの課題として制作したゲームです。提示された仕様をもとに取り組みました。',
+        description: 'Recursionのプロジェクトとして制作したゲームです。' +
+            'プレイヤーはファストフード店でハンバーガーを焼く仕事から始まります。' +
+            'ハンバーガーをひっくり返すごとに25ドル稼ぎ、お金を貯めることによって施設のアップグレード、' +
+            '投資、または不動産の購入をすることができます。',
         repository: 'https://github.com/K4-R4/clicker-empire-game',
         url: 'https://k4-r4.github.io/clicker-empire-game/'
     },
     {
         title: 'Tetris',
         tech: ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
-        description: 'チーム開発で制作したテトリスです。' +
-            'ロジック周りを担当しました。',
+        description: 'チーム開発で制作したテトリスです。',
         repository: 'https://github.com/K4-R4/tetris',
-        url: ''
-    },
-    {
-        title: 'AtCoder Bookmarks',
-        tech: ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
-        description: 'AtCoderで間違えた問題をメモとともに保存しておくChrome拡張機能です。',
-        repository: 'https://github.com/K4-R4/atcoder-bookmarks',
-        url: ''
+        url: 'https://recursion-blue-team.github.io/tetris/'
     },
     {
         title: 'Remote procedure call',
         tech: ['Python', 'JavaScript', 'node.js'],
         description: 'Remote Procedure Callの学習で、UNIXドメインソケットを用いて実装しました。' +
-            'JSON-RPCの仕様をもとに制作しました。',
+            'JSON-RPCの仕様をもとに制作しました。' +
+            'クライアントとサーバーがJSON形式のデータをやり取りします。' +
+            'クライアントはnode.jsで、サーバーはPythonで実装しました。',
         repository: 'https://github.com/K4-R4/remote-procedure-call',
         url: ''
     },
@@ -71,7 +95,9 @@ const workDetails: WorkProps[] = [
         title: 'Non-sticky めも',
         tech: ['JavaScript', 'HTML', 'CSS', 'SQLite', 'node.js', 'Electron'],
         description: 'チーム開発で制作したメモ帳デスクトップアプリです。' +
-            'データベースの周辺、メインプロセスとレンダラープロセスの通信などを担当しました。' +
+            'メモの内容をデスクトップの背景画像として表示できる点に特徴があります。' +
+            'Electronで制作したことでクロスプラットフォームなアプリケーションになっています。' +
+            'データベース、メインプロセスとレンダラープロセスの通信などを担当しました。' +
             'smartHR賞を受賞しました',
         repository: 'https://github.com/K4-R4/team-s09',
         url: ''

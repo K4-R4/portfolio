@@ -3,25 +3,34 @@ import {Card, CardContent, Grid, Typography} from "@mui/material";
 
 interface SkillProps {
     name: string
-    content: string
+    contents: Array<string>
 }
 
 const skillDetails: SkillProps[] = [
     {
-        name: 'Frontend',
-        content: 'JavaScript / TypeScript / React'
+        name: '言語',
+        contents: ['JavaScript / TypeScript / C / C++ / Python / node.js']
     },
     {
-        name: 'Backend',
-        content: 'C / C++ / node.js / Python / Flask / Electron',
+        name: 'フレームワーク',
+        contents: ['Flask / Electron / React'],
     },
     {
-        name: 'Infrastracture',
-        content: 'Git / MySQL / SQLite / Linux'
+        name: 'その他',
+        contents: ['Git / MySQL / SQLite / Linux']
+    },
+    {
+        name: '資格',
+        contents: [
+            '基本情報技術者試験',
+            'TOEIC 920',
+            '実用英語技能検定準一級',
+            'HSK4級'
+        ]
     }
 ]
 
-const SkillCard: React.FC<SkillProps> = ({name, content}: SkillProps) => {
+const SkillCard: React.FC<SkillProps> = ({name, contents}: SkillProps) => {
     return (
         <>
             <Card sx={{width: '100%', m: 1}}>
@@ -29,9 +38,13 @@ const SkillCard: React.FC<SkillProps> = ({name, content}: SkillProps) => {
                     <Typography variant='h6' align='left'>
                         {name}
                     </Typography>
-                    <Typography color='textSecondary'>
-                        {content}
-                    </Typography>
+                        {contents.map((content) => {
+                            return (
+                                <Typography color='textSecondary'>
+                                    {content}
+                                </Typography>
+                            )}
+                        )}
                 </CardContent>
             </Card>
         </>
@@ -50,8 +63,7 @@ const Skills: React.FC = () => {
                 <Grid container md={5} xs={12} display='flex' justifyContent='center' sx={{p: 1}}>
                     <Grid container md={9} xs={12} display='flex' justifyContent='center' sx={{p: 1}}>
                         <Typography variant='body1' sx={{p: 2}}>
-                            開発で使用したことのある言語、フレームワーク、ツールについてまとめています。<br/>
-                            分類は厳密なものではありません。<br/>
+                            開発で使用したことのある言語、フレームワーク、ツールや資格についてまとめています。
                         </Typography>
                     </Grid>
                     {skillDetails.map((skillDetail) => {
