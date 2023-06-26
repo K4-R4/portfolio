@@ -21,7 +21,7 @@ const workDetails: WorkProps[] = [
         description: '42Tokyoの課題としてCで制作した2Dの脱出ゲームです。指定のフォーマットのマップファイルからゲームを生成できます。' +
             'アイテムを収集してゴールに到達することが目的です。' +
             'スタートからゴールまでに有効な経路があるかなどのマップの検証や、ファイルから効率よくマップを読み取ることが難しかったです。',
-        repository: 'https://github.com/orgs/recursion-team-a/repositories',
+        repository: 'https://github.com/K4-R4/so-long',
         url: ''
     },
     {
